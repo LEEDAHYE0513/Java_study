@@ -1,0 +1,68 @@
+package collection.generic.widcard;
+
+import java.util.Date;
+
+//전체 게시판 = boardlist, board = 게시판의 한개의 행 (게시물)
+public class Bboard {
+    private int bno;
+    private String btitle;
+    private String bcontent;
+    private String bwriter;
+    private String bdate;
+
+    public Bboard(String btitle, String bcontent, String bwriter ) {
+
+        this.btitle = btitle;
+        this.bcontent = bcontent;
+        this.bwriter = bwriter;
+    }
+
+    public int getBno() {
+        return bno;
+    }
+
+    public void setBno(int bno) {
+        this.bno = bno;
+    }
+
+    public String getBtitle() {
+        return btitle;
+    }
+
+    public void setBtitle(String btitle) {
+        this.btitle = btitle;
+    }
+
+    public String getBcontent() {
+        return bcontent;
+    }
+
+    public void setBcontent(String bcontent) {
+        this.bcontent = bcontent;
+    }
+
+    public String getBwriter() {
+        return bwriter;
+    }
+
+    public void setBwriter(String bwriter) {
+        this.bwriter = bwriter;
+    }
+
+    public String getBdate() {
+        return bdate;
+    }
+
+    public void setBdate(String bdate) {
+        this.bdate = bdate;
+    }
+
+    @Override
+    public String toString() {
+        return "Board{" +
+                "btitle='" + btitle + '\'' +
+                ", bcontent='" + bcontent + '\'' +
+                ", bwriter='" + bwriter + '\'' +
+                '}';
+    }
+}
